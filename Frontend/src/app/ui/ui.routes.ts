@@ -4,6 +4,7 @@ import { Routes } from '@angular/router';
 import {AccountComponent} from "./account/account.component";
 import {ErrorComponent} from "./error/error.component";
 import {HomeComponent} from "./home/home.component";
+import { MintComponent } from './mint/mint.component';
 import {TransactionComponent} from "./transaction/transaction.component";
 
 export const UiRoute: Routes = [
@@ -12,5 +13,6 @@ export const UiRoute: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'account', component: AccountComponent},
   { path: '404', component: ErrorComponent },
+  { path: 'mint', component: MintComponent },
   { path: '**', redirectTo: '/404' },
 ];

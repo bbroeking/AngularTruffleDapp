@@ -17,7 +17,8 @@ import { RouterModule} from "@angular/router";
 
 // Services
 import { ContractService } from "../services/contract/contract.service";
-import { ThreeBox } from "../services/3box.service"
+import { ThreeBox } from "../services/3box.service";
+import { MintComponent } from './mint/mint.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ThreeBox } from "../services/3box.service"
     HomeComponent,
     TopNavComponent,
     TransactionComponent,
-    ErrorComponent
+    ErrorComponent,
+    MintComponent
   ],
   imports: [
     CommonModule,
